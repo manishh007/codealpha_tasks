@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="fullimage" id="fullimagebox">
+        <img src="images/img1.jpg" id="image">
+        <span onclick="closeimg()"><img src="images/cross_icon.jpg" alt="X"></span>
+    </div>
+    <div class="gallery">
+        <img src="images/img1.jpg" alt="img1" onclick="openimg(this.src)">
+        <img src="images/img2.jpg" alt="img2" onclick="openimg(this.src)">
+        <img src="images/img3.jpg" alt="img3" onclick="openimg(this.src)">
+        <img src="images/img4.jpg" alt="img4" onclick="openimg(this.src)">
+        <img src="images/img5.jpg" alt="img5" onclick="openimg(this.src)">
+        <img src="images/img6.jpg" alt="img6" onclick="openimg(this.src)">
+        <img src="images/img7.jpg" alt="img7" onclick="openimg(this.src)">
+        <img src="images/img8.jpg" alt="img8" onclick="openimg(this.src)">
+        <img src="images/img9.jpg" alt="img9" onclick="openimg(this.src)">
+        <img src="images/img10.jpg" alt="img10" onclick="openimg(this.src)">
+    </div>
+</body>
+<script>
+    // const closeimg = document.querySelector('span');
+    // // console.log(image);
+
+    // const openimg = document.querySelector('.gallery');
+    // // console.log(openimg.children[1]);
+
+    const fullimgbox = document.getElementById('fullimagebox');
+    const fullimg = document.getElementById('image');
+
+    function openimg(e) {
+        fullimgbox.style.display = "flex";
+        fullimg.src = e;
+    }
+
+    function closeimg(e) {
+        fullimgbox.style.display = "none";
+    }
+
+
+
+</script>
+
+</html>
